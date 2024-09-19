@@ -3,32 +3,32 @@ pipeline {
     stages {
         stage('Static Analysis') {
             steps {
-                echo 'Run the static analysis to the code' 
+                echo 'Run the static analysis to the code#1' 
             }
         }
         stage('Compile') {
             steps {
-                echo 'Compile the source code' 
+                echo 'Compile the source code#2' 
             }
         }
         stage('Security Check') {
             steps {
-                echo 'Run the security check against the application' 
+                echo 'Run the security check against the application#3' 
             }
         }
         stage('Run Unit Tests') {
             steps {
-                echo 'Run unit tests from the source code' 
+                echo 'Run unit tests from the source code#4' 
             }
         }
         stage('Run Integration Tests') {
             steps {
-                echo 'Run only crucial integration tests from the source code' 
+                echo 'Run only crucial integration tests from the source code#5' 
             }
         }
         stage('Publish Artifacts') {
             steps {
-                echo 'Save the assemblies generated from the compilation' 
+                echo 'Save the assemblies generated from the compilation#6' 
             }
         }
     }
